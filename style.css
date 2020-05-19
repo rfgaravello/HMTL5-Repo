@@ -1,0 +1,233 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-shadow: 4px 4px 5px greenyellow;
+}
+
+.title {
+    color: blue;
+}
+
+#italic {
+    color: green;
+}
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 35px;
+
+}
+
+.container {
+    border: 20px dashed indigo;
+    margin: 29px 10px 5px 100px;
+    padding: 45px 45px 45px 45px;
+}
+
+.box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background: blue;
+ 
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:  linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, yellow, pink, purple );
+}
+
+@keyframes getBigger{
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+#box3 {
+    animation: getBigger infinite 8s ease-in;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+@keyframes changeColors {
+    0%{background-color: grey;}
+    25%{background-color: purple;}
+   50%{background-color: red;}
+    75%{background-color: yellow;}
+    100%{background-color: grey;}
+}
+
+#box4 {
+    animation: changeColors 2s 3s forwards;
+}
+
+@keyframes moveBox {
+    0%{left: 0px; top: 0px}
+    25%{left: 100px; top: 0px}
+    0%{left: 100px; top: 200px}
+    75%{left: 0px; top: 200px}
+    100%{left: 0px; top: 0px}
+
+}
+
+#box5 {
+    position: relative;
+    background: red;
+    animation: moveBox 5s 3s;
+}
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+html {
+/*    background-image: linear-gradient(to bottom , blue, green, grey);
+background-image: url(Imagens/SOULSTORM.jpg);
+background-repeat: no-repeat;
+background-size: cover;*/
+}
+
+.circle-img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 8px 8px 10px 10px rgb(202, 199, 206);
+    border-radius: 20%;
+}
+
+.flex {
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+    flex-direction: ;
+   
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+
+}
+
+.Contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+}
+
+.Box {
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span 2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col / span 5;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(grey, greenyellow, grey, greenyellow);
+}
+.d {
+    grid-column: col  / span  2 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 3 / span  3;
+    grid-row: row 3;    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    background-image: linear-gradient(grey, greenyellow, grey, greenyellow );
+    justify-content: center;
+}
